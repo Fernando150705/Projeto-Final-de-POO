@@ -6,7 +6,7 @@ package com.mycompany.projetofinal;
 
 import java.awt.Dimension;
 import javax.swing.JDialog;
-
+import javax.swing.JFrame;
 /**
  *
  * @author Laboratorio
@@ -111,23 +111,9 @@ public class HomePage extends javax.swing.JFrame {
     }//GEN-LAST:event_OnCliciSair
 
     private void OnCliciListar(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnCliciListar
-        // TODO add your handling code here:
-        JDialog dialog = new JDialog(new FormListaContato(), true);
-        
-        // define o titulo do formulario
-        dialog.setTitle("Lista de Contatos");
-        
-        // define o tamanho do formulario
-        dialog.setSize(new Dimension(400,400));
-        
-        // apresenta o form no centro da tela
-        dialog.setLocationRelativeTo(null);
-        
-        
-        System.out.print("cliclou na Lista de Contatos \n");
-
-        
-        dialog.setVisible(true);
+       FormListaContato form = new FormListaContato();
+       form.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+       form.setVisible(true);
     }//GEN-LAST:event_OnCliciListar
 
     private void OnCliciNovo(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OnCliciNovo
